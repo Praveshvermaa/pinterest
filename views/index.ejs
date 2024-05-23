@@ -1,0 +1,29 @@
+
+   <%include  ./partials/header.ejs%>
+   <div style="background-image: url(https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&w=600);" class="bg-cover w-full h-screen flex items-center justify-center">
+    <div class="w-96 h-[70vh] bg-zinc-100 px-4 py-5 rounded-lg">
+        <h1 class="text-3xl text-center px-2 tracting-tight leading-none font-semibold ">Welcome to Pinterest</h1>
+        <form class="flex px-8 flex-wrap flex-col gap-1 my-4" action="/login" method="post">
+            <label class="" for="username">username</label>
+
+            <input class="block mt-2 w-full px-3 py-2" type="text" name="username"  
+            placeholder="username"
+            />
+            <label for="password">Password</label>
+            <input class="block mt-2 w-full px-3 py-2" type="password" name="password"  
+            placeholder="password"
+            >
+            <p class="font-bold">Forgotton your password?</p>
+            <input class="block mt-2 w-full px-3 py-2 rounded-full bg-red-600" value="Log in" type="submit"   
+           
+            />
+        </form>
+        <p class="text-center">Not on Pinterest yet?<a class="font-bold text-blue-600 underline" href="/register">Sign up</a>   </p>
+        <p class="text-center">Are you a business?  Get started here! </p>    
+         
+           
+    </div>
+   </div>
+
+   <%include  ./partials/footer.ejs%>
+   

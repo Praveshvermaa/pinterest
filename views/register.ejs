@@ -1,0 +1,37 @@
+
+<%include  ./partials/header.ejs%>
+<div  class="bg-cover bg-center w-full h-screen bg-zinc-300 flex items-center justify-center">
+ <div class="w-96 h-[70vh] bg-zinc-100 px-4 py-5 rounded-lg">
+     <h1 class="text-3xl text-center px-2 tracting-tight leading-none font-semibold ">Create new Account</h1>
+     <form class="flex px-8 flex-wrap flex-col gap-1 my-4" action="/register" method="post">
+         
+
+         <input class="block mt-2 w-full px-3 py-2" type="text" name="username"  
+         placeholder="username"
+         />
+        
+        
+         <input class="block mt-2 w-full px-3 py-2" type="email" name="email"  
+         placeholder="email"
+         />
+         <input class="block mt-2 w-full px-3 py-2" type="password" name="password"  
+         placeholder="password"
+         />
+         <input class="block mt-2 w-full px-3 py-2" type="number" name="number"  
+         placeholder="number"
+         />
+
+         
+         <input class="block mt-2 w-full px-3 py-2 rounded-full bg-red-600" value="Sing up" type="submit"   
+        
+         />
+     </form>
+     <p class="text-center">Already account exist?<a class="font-bold text-blue-600 underline" href="/">Login</a>   </p>
+       
+      
+        
+ </div>
+</div>
+
+<%include  ./partials/footer.ejs%>
+
