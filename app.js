@@ -4,10 +4,22 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const expressSession = require("express-session")
+const mongoose = require("mongoose")
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const passport = require('passport');
+const dotenv = require("dotenv")
+dotenv.config("./.env")
+
+const DB = process.env.DATABASE
+
+mongoose.connect(DB).then(()=>{
+  console.log("MongoDB atlas is connected");
+})
+.catch((error)=>{
+  console.log("not connected",error);
+})
 
 var app = express();
 
